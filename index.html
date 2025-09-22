@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive JavaScript Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript Interactivity Demo</h1>
+      <button id="themeToggle">🌙 Toggle Dark Mode</button>
+    </header>
+
+    <main>
+      <!-- Part 1: Event Handling -->
+      <section>
+        <h2>Part 1: Event Handling</h2>
+        <button id="clickMeBtn">Click Me!</button>
+        <p id="message"></p>
+      </section>
+
+      <!-- Part 2: Interactive Elements -->
+      <section>
+        <h2>Part 2: Interactive Elements</h2>
+
+        <!-- Counter -->
+        <div class="counter">
+          <h3>Counter Game</h3>
+          <button id="decrease">-</button>
+          <span id="count">0</span>
+          <button id="increase">+</button>
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq">
+          <h3>FAQ Section</h3>
+          <div class="faq-item">
+            <button class="faq-question">What is JavaScript?</button>
+            <p class="faq-answer">
+              JavaScript is a programming language used to make web pages
+              interactive.
+            </p>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">What is DOM?</button>
+            <p class="faq-answer">
+              DOM stands for Document Object Model, a tree structure of your web
+              page.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 3: Form Validation -->
+      <section>
+        <h2>Part 3: Form Validation</h2>
+        <form id="signupForm" novalidate>
+          <label>
+            Name:
+            <input type="text" id="name" required />
+            <small class="error"></small>
+          </label>
+
+          <label>
+            Email:
+            <input type="email" id="email" required />
+            <small class="error"></small>
+          </label>
+
+          <label>
+            Password:
+            <input type="password" id="password" required />
+            <small class="error"></small>
+          </label>
+
+          <button type="submit">Submit</button>
+          <p id="formMessage"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

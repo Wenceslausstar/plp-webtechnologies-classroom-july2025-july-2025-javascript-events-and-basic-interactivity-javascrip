@@ -1,0 +1,78 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #fdfdfd;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Dark mode */
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+/* Counter */
+.counter {
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+
+/* FAQ */
+.faq-answer {
+  display: none;
+  margin: 5px 0 10px;
+}
+
+.faq-question {
+  background: #eee;
+  width: 100%;
+  text-align: left;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.faq-question.active {
+  background: #ccc;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+label {
+  margin-bottom: 15px;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  display: block;
+}
+
+#formMessage {
+  margin-top: 10px;
+  font-weight: bold;
+}
